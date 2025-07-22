@@ -1,0 +1,26 @@
+﻿@{
+    // ViewData["Title"] = "Home Page";
+}
+
+@{
+    ViewBag.Title = "Service Delivery Dashboard";
+    var reportUrl = ViewBag.ReportUrl;
+    var refreshInterval = ViewBag.RefreshInterval;
+}
+
+<h2>Service Delivery Dashboard</h2>
+
+<iframe id="powerbiFrame"
+        width="100%"
+        height="1000px"
+        src="@reportUrl"
+        frameborder="0"
+        allowfullscreen="true">
+</iframe>
+
+<script>
+    setInterval(function () {
+        var iframe = document.getElementById("powerbiFrame");
+        iframe.src = iframe.src;
+    }, @refreshInterval); // Reload iframe every X ms
+</script>
