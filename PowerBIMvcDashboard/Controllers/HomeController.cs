@@ -19,7 +19,7 @@ public class HomeController : Controller
 
         string reportUrl = "https://app.powerbi.com/view?r=eyJrIjoiYWI4NzE1MGYtOTNhMi00MzhjLWJiN2ItMTE3ZjM4NGJiZThhIiwidCI6ImQ4MjY2NjRmLTE1YjUtNDY1ZS1iNzg5LTY1YzNjNjFlNjllZSIsImMiOjN9"; // from "Publish to Web"
         ViewBag.ReportUrl = reportUrl;
-        ViewBag.RefreshInterval = 5000; // 5 minutes in milliseconds
+        ViewBag.RefreshInterval = 60000; // 5 minutes in milliseconds
         return View();
     }
 
