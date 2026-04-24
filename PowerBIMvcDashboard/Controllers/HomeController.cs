@@ -17,7 +17,7 @@ public class HomeController : Controller
     {
         //return View();
 
-        string reportUrl = "https://app.powerbi.com/reportEmbed?reportId=04122f37-5cd4-482a-94b3-8d21c5ff5cc5&autoAuth=true&ctid=d826664f-15b5-465e-b789-65c3c61e69ee"; // from "Publish to Web"
+        string reportUrl = "https://app.powerbi.com/reportEmbed?reportId=04122f37-5cd4-482a-94b3-8d21c5ff5cc5&autoAuth=true&ctid=d826664f-15b5-465e-b789-65c3c61e69ee";// from "Publish to Web"
         ViewBag.ReportUrl = reportUrl;
         ViewBag.RefreshInterval = 60000; // 5 minutes in milliseconds
         return View();
